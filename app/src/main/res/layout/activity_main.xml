@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="jungle68.com.voiceline.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custom colors, show section mark, progress:50"
+        android:textSize="12sp"
+        />
+
+    <jungle68.com.library.core.VoiceSeekBar
+        android:id="@+id/vsb"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        app:jungle68_max="10"
+        app:jungle68_progress="5"
+        app:jungle68_is_show_track_line="false"
+        app:jungle68_section_count="1"
+    />
+
+
+</LinearLayout>

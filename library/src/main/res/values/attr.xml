@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VoiceSeekBar">
+        <attr name="jungle68_min" format="float|reference"/> <!--min < max, default: 0.0f-->
+        <attr name="jungle68_max" format="float|reference"/> <!--min < max, default: 100.0f-->
+        <attr name="jungle68_progress" format="float|reference"/> <!--real time progress value, default: min-->
+        <attr name="jungle68_is_show_track_line" format="boolean"/> <!--real time progress value, default: min-->
+        <attr name="jungle68_track_size" format="dimension|reference"/> <!--height of right-track(on the right of thumb), default: 2dp-->
+        <!--height of left-track(on the left of thumb), default: 2dp higher than right-track's height-->
+        <attr name="jungle68_second_track_size" format="dimension|reference"/>
+        <attr name="jungle68_thumb_radius" format="dimension|reference"/> <!--radius of thumb, default: 2dp higher than left-track's height-->
+        <attr name="jungle68_track_color" format="color|reference"/> <!--color of right-track, default: R.color.colorPrimary-->
+        <attr name="jungle68_second_track_color" format="color|reference"/> <!--color of left-track, default: R.color.colorAccent-->
+        <attr name="jungle68_thumb_color" format="color|reference"/> <!--color of thumb, default: same as left-track's color-->
+        <attr name="jungle68_section_count" format="integer|reference"/> <!--shares of whole progress(max - min), default: 10-->
+        <attr name="jungle68_show_section_mark" format="boolean"/> <!--show demarcation points or not, default: false-->
+        <attr name="jungle68_auto_adjust_section_mark" format="boolean"/> <!--auto scroll to the nearest section_mark or not, default: false-->
+        <attr name="jungle68_section_text_size" format="dimension|reference"/> <!--text size of section-text, default: 14sp-->
+        <attr name="jungle68_section_text_color" format="color|reference"/> <!--text color of section-text, default: same as right-track's color-->
+        <!--text position of section-text relative to track, sides, bottom_sides, below_section_mark, default: sides-->
+        <attr name="jungle68_section_text_position">
+            <enum name="sides" value="0"/>
+            <enum name="bottom_sides" value="1"/>
+            <enum name="below_section_mark" value="2"/>
+        </attr>
+        <attr name="jungle68_section_text_interval" format="integer"/> <!--the interval of two section-text, default: 1-->
+        <attr name="jungle68_show_thumb_text" format="boolean"/> <!--show real time progress-text under thumb or not, default: false-->
+        <attr name="jungle68_thumb_text_size" format="dimension|reference"/> <!--text size of progress-text, default: 14sp-->
+        <attr name="jungle68_thumb_text_color" format="color|reference"/> <!--text color of progress-text, default: same as left-track's color-->
+        <attr name="jungle68_show_progress_in_float" format="boolean"/> <!--show bubble-progress in float or not, default: false-->
+        <attr name="jungle68_touch_to_seek" format="boolean"/> <!--touch anywhere on track to quickly seek, default: false-->
+        <attr name="jungle68_seek_by_section" format="boolean"/> <!--seek by section, the progress may not be linear, default: false-->
+        <attr name="jungle68_bubble_color" format="color|reference"/> <!--color of bubble, default: same as left-track's color-->
+        <attr name="jungle68_bubble_text_size" format="dimension|reference"/> <!--text size of bubble-progress, default: 14sp-->
+        <attr name="jungle68_bubble_text_color" format="color|reference"/> <!--text color of bubble-progress, default: #ffffffff-->
+        <attr name="jungle68_anim_duration" format="integer"/> <!--duration of animation, default: 200ms-->
+        <attr name="jungle68_always_show_bubble" format="boolean"/> <!--bubble shows all time, default: false-->
+        <attr name="jungle68_thumb_src" format="reference"/> <!--thum src, default: null-->
+    </declare-styleable>
+</resources>
